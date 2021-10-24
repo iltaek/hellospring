@@ -21,6 +21,7 @@ pipeline {
     }
     stage('Build Docker image') {
       steps {
+        sh "echo ${params.DOCKER_HUB_USER_REPO}/${params.IMAGE_NAME}"
         script {
           app = docker.build("${params.DOCKER_HUB_USER_REPO}/${params.IMAGE_NAME}")
         }
