@@ -1,7 +1,7 @@
 pipeline {
   parameters {
     string(name: 'DOCKER_HUB_USER_REPO', defaultValue: 'iltaek')
-    string(name: 'IMAGE_NAME', defaultValue: 'productreview')
+    string(name: 'IMAGE_NAME', defaultValue: 'hellospring')
   }
 
   agent any
